@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08131a" />
+  <title>raat ke baad — some songs don't get old</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="scene">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="rain" aria-hidden="true"></div>
+    <div class="city-glow city-glow--one" aria-hidden="true"></div>
+    <div class="city-glow city-glow--two" aria-hidden="true"></div>
+
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title" lang="hi">आख्खा बॉलीवुड<br><em>एक तरफ</em><br><span>इमरान हाशमी एक तरफ</span></h1>
+        <div class="hero-rule"></div>
+        <p class="intro">For the nights that begin with a song<br>and end somewhere in the past.</p>
+      </div>
+
+      <div class="room-frame" aria-label="A cinematic late-night room with friends, rain, city lights, and a small framed memory on the wall">
+        <img src="assets/room-scene-candle-right.png" alt="Friends gathered around a warmly lit low table, with a glowing framed photograph of expressive eyes, a candle on the floor to the right of the balcony-side friend, and an open rainy balcony beyond" />
+        <div class="frame-index">after hours / 00:47</div>
+      </div>
+
+    </section>
+
+    <section class="player-wrap" id="player" aria-label="Music player">
+      <div class="player">
+        <div class="player-memory-line">for the ones who still remember</div>
+        <div class="album-art" aria-hidden="true"><span>R</span><small>late night<br>memories</small></div>
+        <div class="track-info">
+          <p class="track-kicker" data-track-meta>from the train · 2007</p>
+          <h2 data-track-title>Beetein Lamhe</h2>
+          <p data-track-artist>KK <span class="separator">·</span> The Train</p>
+          <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="player-actions">
+          <div class="transport">
+            <button type="button" class="icon-btn" data-action="prev" aria-label="Previous song">◀◀</button>
+            <button type="button" class="play-btn" data-action="play" aria-label="Play Beetein Lamhe"><span class="play-icon">▶</span></button>
+            <button type="button" class="icon-btn" data-action="next" aria-label="Next song">▶▶</button>
+          </div>
+          <div class="time-row"><span data-current-time>00:00</span><div class="progress" data-progress><span></span></div><span data-duration>00:00</span></div>
+          <div class="stream-links"><a href="https://open.spotify.com/search/Beetein%20Lamhe" target="_blank" rel="noreferrer">spotify ↗</a><a href="https://www.youtube.com/results?search_query=Beetein+Lamhe+KK" target="_blank" rel="noreferrer">youtube ↗</a></div>
+        </div>
+      </div>
+      <p class="player-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <audio id="audio" preload="metadata"></audio>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
